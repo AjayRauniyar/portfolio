@@ -5,32 +5,37 @@ const items=[
     {
         id:1,
         title:"Logistics App",
-        img:"./picture.png",
+        img:"./logistics.jpeg",
         desc:"This is my logistic app having both user and driver app",
+        linkid:"https://github.com/AjayRauniyar/Flutter-Logistic-app-project",
     },
     {
         id:2,
         title:"Gemini ChatBot",
-        img:"./picture.png",
+        img:"./gemini.png",
         desc:"This is ai chatbot using google gemini api",
+        linkid:'https://github.com/AjayRauniyar/AI_Chat_Bot',
     },
     {
         id:3,
         title:"Image Geneator using DALLE ",
-        img:"./picture.png",
+        img:"./dalle.png",
         desc:"this is ai image generator using openAi DALLE ",
+        linkid:'https://github.com/AjayRauniyar/cinemAI',
     },
     {
         id:4,
         title:"Image Generator using Midjourney",
-        img:"./picture.png",
+        img:"./midjourney.png",
         desc:"this is ai image generator using Midjourney api",
+        linkid:'https://github.com/AjayRauniyar/AI_image_generator',
     },
     {
         id:5,
         title:"Video Generator using HuggingFace",
-        img:"./picture.png",
+        img:"./video.jpeg",
         desc:"this is video generator using HuggingFace video generator model",
+        linkid:'https://github.com/AjayRauniyar/cinemAIVideo',
     }
 ];
 
@@ -51,7 +56,8 @@ const Single =({item}) => {
            <motion.div className="textContainer" style={{y}} >
             <h2 >{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo Video</button>
+            <a href={item.linkid}>
+            <button >See Respository</button></a>
            </motion.div>
            </div>
         </div>

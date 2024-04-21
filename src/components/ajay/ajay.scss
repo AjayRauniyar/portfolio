@@ -10,6 +10,8 @@
         max-width: 1366px;
         height: 100%;
         margin:auto;
+        position: relative;
+        z-index: 2;
 
         .textContainer{
             height: 100%;
@@ -17,6 +19,8 @@
             flex-direction: column;
             justify-content: center;
             gap:40px ;
+            position: relative;
+            z-index: 3;
             @include mobile{
                 height: 50%;
                 gap: 20px;
@@ -52,6 +56,9 @@
                     margin-right:20px ;
                     cursor: pointer;
                     font-weight: 300;
+                    z-index: 3;
+                    
+                   
                     @include mobile{
                         padding-left: 20px;
                         margin-top: 10px;
@@ -77,6 +84,7 @@
         position: absolute;
         top: 9%;
         right: 0;
+        z-index: 4;
         @include mobile{
             height: 50%;
             width: 100%;
@@ -99,6 +107,7 @@
         color: #ffffff09;
         width: 50%;
         font-weight: bold;
+        z-index: 1;
 
     }
 }

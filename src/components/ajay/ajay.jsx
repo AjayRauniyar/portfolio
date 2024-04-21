@@ -37,6 +37,17 @@ const sliderVariants={
     },
 };
 const Ajay =() =>{
+    const handleScrollToPortfolio = () => {
+        const portfolioSection = document.getElementById('Portfolio');
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+      const handleScrollToContact = () => {
+        const portfolioSection = document.getElementById('Contact');
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+    const handleClick = () => {
+        window.location.href = 'https://drive.google.com/file/d/1_K1AZqgUOc_Z-1M7Cbk92qvXRkUWjFrD/view?usp=sharing'; 
+      };
     return(
         <div className="ajay">
             <div className="wrapper">
@@ -46,11 +57,11 @@ const Ajay =() =>{
                 </motion.h2>
                 <motion.h1 variants={textVariants}>Flutter App & Web Developer </motion.h1>
                 <motion.div variants={textVariants} className="buttons">
-                    <motion.button variants={textVariants}>See the Latest Works</motion.button>
-                    <motion.button variants={textVariants}>Resume</motion.button>
-                    <motion.button variants={textVariants}>Contact Me</motion.button>
+                    <motion.button onClick={handleScrollToPortfolio} variants={textVariants}>See the Latest Works</motion.button>
+                    <motion.button onClick={handleClick} variants={textVariants}>Resume</motion.button>
+                    <motion.button onClick={handleScrollToContact} variants={textVariants}>Contact Me</motion.button>
                 </motion.div>
-                <motion.img variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
+                <motion.img onClick={handleScrollToContact} variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
              </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">

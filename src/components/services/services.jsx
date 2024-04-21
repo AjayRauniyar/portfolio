@@ -21,9 +21,17 @@ const variants={
 const Services=()=>{
 
     const ref=useRef()
-    const  isInView=useInView(ref,{margin:"-100px"})
+    const uidesign = () => {
+        window.location.href = 'https://drive.google.com/drive/folders/1Qhk8qaJq7CDLwqQzcAq2s5vwBYsMgQUg?usp=drive_link'; 
+    };
+      
+    const handleScrollToPortfolio = () => {
+        const portfolioSection = document.getElementById('Portfolio');
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+    
     return (
-        <motion.div className="services" variants={variants} initial="initial" ref={ref} animate={isInView && "animate"}>
+        <motion.div className="services" variants={variants} initial="initial" ref={ref} animate={ "animate"}>
         <motion.div className="textContainer"variants={variants}>
         <p>I focus on helping your company grow 
             <br/>and move forward
@@ -32,36 +40,36 @@ const Services=()=>{
         </motion.div>
         <motion.div className="titleContainer" variants={variants}>
             <div className="title">
-                <img src="/people.webp" alt="" />
+                <img src="./people.webp" alt="" />
                 <h1><motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas</h1>
             </div>
             <div className="title">
                 
                 <h1><motion.b whileHover={{color:"orange"}}>For You </motion.b>or Business.</h1>
-                <button>WHAT I DO ?</button>
+                <button onClick={handleScrollToPortfolio}>WHAT I DO ?</button>
             </div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
             <motion.div className="box"  whileHover={{background:"lightgray",color:"black"}}>
                 <h2> Flutter App</h2>
                     <p>
-                        here is how i do make my projects 
+                        This is my flutter UI design images 
                     </p>
-                <button>Click to See</button>
+                <button onClick={uidesign}>Click to See</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
                 <h2> Web App</h2>
                     <p>
-                        here is how i do make my projects 
+                        This is my Web application designs
                     </p>
-                <button>Click to See</button>
+                <button onClick={uidesign}>Click to See</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
                 <h2> UI/UX</h2>
                     <p>
-                        here is how i do make my projects 
+                        It contains all the UI/UX design for user 
                     </p>
-                <button>Click to See</button>
+                <button onClick={uidesign}>Click to See</button>
             </motion.div>
            
         </motion.div>
