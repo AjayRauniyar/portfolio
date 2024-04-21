@@ -5,31 +5,31 @@ const items=[
     {
         id:1,
         title:"Logistics App",
-        img:"/picture.png",
+        img:"./picture.png",
         desc:"This is my logistic app having both user and driver app",
     },
     {
         id:2,
         title:"Gemini ChatBot",
-        img:"/picture.png",
+        img:"./picture.png",
         desc:"This is ai chatbot using google gemini api",
     },
     {
         id:3,
         title:"Image Geneator using DALLE ",
-        img:"/picture.png",
+        img:"./picture.png",
         desc:"this is ai image generator using openAi DALLE ",
     },
     {
         id:4,
         title:"Image Generator using Midjourney",
-        img:"/picture.png",
+        img:"./picture.png",
         desc:"this is ai image generator using Midjourney api",
     },
     {
         id:5,
         title:"Video Generator using HuggingFace",
-        img:"/picture.png",
+        img:"./picture.png",
         desc:"this is video generator using HuggingFace video generator model",
     }
 ];

@@ -50,14 +50,14 @@ const Ajay =() =>{
                     <motion.button variants={textVariants}>Resume</motion.button>
                     <motion.button variants={textVariants}>Contact Me</motion.button>
                 </motion.div>
-                <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
+                <motion.img variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
              </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
                 Developer Influencer Learner 
             </motion.div>
             <div className="imageContainer">
-                <img src="/ajayrauniyar.png" alt=""/>
+                <img src="./ajayrauniyar.png" alt=""/>
             </div>
         </div>
     )
